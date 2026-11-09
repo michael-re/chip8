@@ -1,0 +1,65 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Debug information files
+*.dwo
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+*.so.*
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# IDE directories
+.vscode/
+.vs/
+
+# Build directories
+[Bb]uild/
+[Bb]uild-*/
+cmake-build-*/
+target/
+
+# vcpkg
+vcpkg_installed/
+
+# test output & cache
+Testing/
+.cache/
