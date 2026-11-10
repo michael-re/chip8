@@ -11,4 +11,9 @@
 #ifndef CHIP8_CHIP8_HPP
 #define CHIP8_CHIP8_HPP
 
+namespace chip8
+{
+    auto run(const char* rom, const int scale, const int delay) -> void;
+} // namespace chip8
+
 #endif /* CHIP8_CHIP8_HPP */

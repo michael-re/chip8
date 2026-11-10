@@ -6,10 +6,22 @@
     "dictionaryDefinitions": [],
     "dictionaries": [],
     "words": [
+        "abgr",
         "anglebrackets",
+        "argparse",
+        "cpptrace",
+        "cxkk",
+        "dxyn",
+        "fontset",
+        "keysym",
         "msvc",
         "realpath",
-        "strequal"
+        "sdlk",
+        "sknp",
+        "strequal",
+        "subn",
+        "tablee",
+        "tablef"
     ],
     "ignoreWords": [],
     "import": []

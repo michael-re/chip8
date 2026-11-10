@@ -29,6 +29,10 @@ source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR}
         ${chip8_src_folder}/main.cpp
 )
 
+# Find third-party dependencies
+find_package(SDL2     CONFIG REQUIRED)
+find_package(argparse CONFIG REQUIRED)
+
 # Create executable
 add_executable(chip8
     ${chip8_hpp_files}
@@ -38,3 +42,11 @@ add_executable(chip8
 
 # Add include directories
 target_include_directories(chip8 PRIVATE ${chip8_inc_folder})
+
+# Link libraries
+target_link_libraries(chip8
+    PRIVATE
+        argparse::argparse
+        $<TARGET_NAME_IF_EXISTS:SDL2::SDL2main>
+        $<IF:$<TARGET_EXISTS:SDL2::SDL2>,SDL2::SDL2,SDL2::SDL2-static>
+)
