@@ -1,7 +1,6 @@
 {
   "dependencies": [
     "argparse",
-    "cpptrace",
     "sdl2"
   ]
 }
