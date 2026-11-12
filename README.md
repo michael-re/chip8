@@ -18,7 +18,6 @@ system:
 | [CMake](https://cmake.org/) | Presets support is required, so 3.30 or later is recommended. |
 | [vcpkg](https://github.com/microsoft/vcpkg) | Needed for the SDL2 and argparse dependencies. The presets locate it through the `VCPKG_ROOT` environment variable. |
 | [Make](https://www.gnu.org/software/make/) | Not strictly required. You can run the CMake commands directly instead (see below). |
-| [Ninja](https://ninja-build.org/) | Generator used by the CMake presets. Not strictly required. To use your platform's default generator, change `generator` in [`CMakePresets.json`](CMakePresets.json). |
 
 ### Build
 
