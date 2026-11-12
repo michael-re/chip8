@@ -23,7 +23,7 @@ constexpr auto k_help    = R"(A simple CHIP-8 emulator
 Usage:
   chip8 [--help] [--version] --rom ROM [--scale SCALE] [--delay DELAY]
 
-Optional arguments:
+Arguments:
   -h, --help        : Displays this help message and exits.
   -v, --version     : Displays version information and exits.
   -r, --rom ROM     : Path to the CHIP-8 ROM file to execute. The ROM
