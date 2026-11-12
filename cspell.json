@@ -21,7 +21,8 @@
         "strequal",
         "subn",
         "tablee",
-        "tablef"
+        "tablef",
+        "tetris"
     ],
     "ignoreWords": [],
     "import": []
