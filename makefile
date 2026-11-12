@@ -12,14 +12,14 @@
 #   Configures and builds the project using the given cmake preset.
 #
 # usage:
-#   $(call build,<preset>)
+#   $(call build,<preset>,<config>)
 #
 # arguments:
-#   <preset> : Name of the cmake configure preset to use (must be defined
-#              in CMakePresets.json).
+#   <preset> : Name of the cmake configure preset.
+#   <config> : Build configuration (Debug or Release).
 #===============================================================================
 define build
-	cmake -S . --preset $(1) && cmake --build build/$(1)
+	cmake -S . --preset $(1) && cmake --build build/$(1) --config $(2)
 	if [ -f build/$(1)/compile_commands.json ]; then           \
 		cmake -E copy build/$(1)/compile_commands.json build/; \
 	fi
@@ -56,8 +56,8 @@ clean:
 
 .PHONY: debug
 debug:
-	$(call build,debug)
+	$(call build,debug,Debug)
 
 .PHONY: release
 release:
-	$(call build,release)
+	$(call build,release,Release)

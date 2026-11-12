@@ -21,7 +21,10 @@
                 "CMAKE_BUILD_TYPE": "Debug",
                 "CMAKE_ARCHIVE_OUTPUT_DIRECTORY": "${sourceDir}/target/debug/lib",
                 "CMAKE_LIBRARY_OUTPUT_DIRECTORY": "${sourceDir}/target/debug/lib",
-                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/target/debug/bin"
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/target/debug/bin",
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG": "${sourceDir}/target/debug/bin",
+                "CMAKE_LIBRARY_OUTPUT_DIRECTORY_DEBUG": "${sourceDir}/target/debug/lib",
+                "CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG": "${sourceDir}/target/debug/lib"
             }
         },
         {
@@ -32,7 +35,10 @@
                 "CMAKE_BUILD_TYPE": "Release",
                 "CMAKE_ARCHIVE_OUTPUT_DIRECTORY": "${sourceDir}/target/release/lib",
                 "CMAKE_LIBRARY_OUTPUT_DIRECTORY": "${sourceDir}/target/release/lib",
-                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/target/release/bin"
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/target/release/bin",
+                "CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE": "${sourceDir}/target/release/bin",
+                "CMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE": "${sourceDir}/target/release/lib",
+                "CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE": "${sourceDir}/target/release/lib"
             }
         }
     ]
