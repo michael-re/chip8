@@ -307,7 +307,6 @@ auto chip8::emulator::op_cxkk() -> void
     reg_vx = rng<std::uint64_t>(0u, 255u) & byte_kk;
 }
 
-///
 auto chip8::emulator::op_dxyn() -> void
 {
     // Conflict about sprite behavior when it reaches the screens edge. Some
